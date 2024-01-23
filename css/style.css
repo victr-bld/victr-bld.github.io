@@ -150,20 +150,20 @@ body {
   
 /* Education related */
 
-#education-section {
+#utils-section {
     margin-top: 30px;
 }
 
-.semester-list {
+.utils-list {
     list-style-type: none;
     padding: 0;
 }
 
-.semester-item {
+.utils-item {
     margin-top: 20px;
 }
 
-.semester-info {
+.utils-info {
     margin-top: 15px;
     font-size: 1.25em;
     font-weight: bold;

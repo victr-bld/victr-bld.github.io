@@ -2,36 +2,131 @@
 <html lang="en-US">
   <head>
     <meta charset="utf-8" />
-    <div id="header">victr-website</div>
-    <link href="css/style.css" rel="stylesheet">
+    <title>victr-website</title>
+    <link href="/css/style.css" rel="stylesheet">
   </head>
   <body>
-    <a href="../index.html">previous page</a>
+    
+    <!-- HEADERS -->
+    <div id="header">experience details</div>
+    <div id="subheader">some information about my professional experiences</div>
 
-    <!-- FORMATION -->
-    <h1>formation</h1>
+    <!-- EXPERIENCE -->
+    <section id="utils-section">
 
-    <!-- UTC -->
-    <h2>french engineering diploma</h2>
-    <p><i>université de technologie de Compiègne</i></p>
-    <p>date: 2021-2024</p>
-    <p>classes: 
-      <ul>
-        <li>RV01: virtual-reality</li>
-     </ul>
-    </p>
-    <p>projects: 
-      <ul>
-        <li>splendor</li>
-     </ul>
-    </p>
+      <!-- VALEO -->
+      <h1>EMBEDDED SOFTWARE INTERN</h1>
+      <h3><i>Valeo Visions Systems (Ireland)</i></h3>
+      september 2022 to february 2023
+      <ul class="utils-list">
+          <li class="utils-item">
+              <!-- FIRST MISSION -->
+              <div class="utils-info">Mission 1: internal libraries changes</div>
+              <div class="row-of-elements">
+                  <div class="element">
+                      <div>
+                        In this first mission, the goal was to learn the company policy and their workflow. I had to acclimate myself to the software Valeo were using, their methods and the general concept of an embedded software engineer.
+                      </div>
+                      <div>
+                        It consisted in doing some changing in the libraries created and used by Valeo. It allows me to learn about major <b>C++ programming and OOP concepts</b> while developing following a <b>Test-Driven Development</b> (TDD).
+                      </div>
+                      
+                  </div>
+              </div>
+              
+              <!-- SECOND MISSION -->
+              <div class="utils-info">Mission 2: creation of an IPC library using QNX</div>
+              <div class="row-of-elements">
+                  <div class="element">
+                      <div>
+                        In this second mission, the goal was to develop a fully-functional application from a simple UML. The application dealed about <b>Inter-Process Communication</b> (IPC) in a <b>Real-Time Operating System</b> (RTOS) developped by QNX.
+                      </div>
+                      <div>
+                        The mission helped me creating, testing, organizing and managing a full project with external dependencies (the ones from my first mission - which were not as functional as they should be (it's always with other projects that we realize the misconceptions...)). I also had to assist to meetings about the project in general and how my application should connect with others.
+                      </div>
+                      <div>
+                        Finally, I had to stress-test the entire application to make sure the performance were respecting its specifications.
+                      </div>
+                  </div>
+              </div>
+              
+              <!-- THIRD MISSION -->
+              <div class="utils-info">Mission 3: creation of an pixelation application</div>
+              <div class="row-of-elements">
+                  <div class="element">
+                      <div>
+                        The goal of this third mission was to develop a system that pixelate a certain area of an image. The requirements were that the area(s) was(were) defined by a certain number of point (from 2 to 15) and that the pixelation time should be less than a maximum time
+                      </div>
+                      <div>
+                        Technically, I used a <b>internal Vulkan engine</b> developped by Valeo and had to learn the Vulkan basics in order to program the system. First, it was pretty difficult to understand the engine but once I understood (a glimpse of) the philosophy behind Vulkan, it was easier. Then, the results were more optimized and the process time significatively less important.
+                      </div>
+                  </div>
+              </div>
+              
+              <!-- FOURTH MISSION -->
+              <div class="utils-info">Mission 4: creation of an color-space convertor</div>
+              <div class="row-of-elements">
+                  <div class="element">
+                      <div>
+                        This last mission was about to develop a color-space convertor that is able to convert a image in RGB format to a image using the YUV format, for instance. To developp this convertor, I had to research color formats, their uses, both in the company and in the world of camera vision, and their conversion methods. 
+                      </div>
+                      <div>
+                        This whole conversion system has been then developped in the Vulkan engine using specific compute shaders. 
+                      </div>
+                  </div>
+              </div>
+        </li>
+      </ul>
+      <hr>
 
-    <hr> <!-- ------------------------------------------- -->
+      <!-- EFA FRANCE -->
+      <h1>SOFTWARE DEVELOPER INTERN</h1>
+      <h3><i>EFA France</i></h3>
+      april 2021 to june 2021
+      <ul class="utils-list">
+          <li class="utils-item">
+              <!-- FIRST MISSION -->
+              <div class="utils-info">Main mission: improvement of a voice-command system and its interface</div>
+              <div class="row-of-elements">
+                  <div class="element">
+                      <div>
+                        EVAS is a system made by EFA France based on <b>voice-recognition</b> that can be used to trigger action via CAN BUS or IO. My role was to search for better voice-recognition libraries, test them and conclude on the prosperity of the system.
+                      </div>
+                      <div>
+                        All the development was in an embedded context: a raspberry board with <b>Linux Lite</b>. The main programming language used was <b>Python</b> and the interface was made using <b>Qt</b>. 
+                      </div>
+                      
+                  </div>
+              </div>
+              <!-- OTHER MISSION -->
+              <div class="utils-info">Other missions: research about 3D printing and reports about finding</div>
+              <div class="row-of-elements">
+                  <div class="element">
+                      <div>
+                        Aside of my main mission, I was asked to research 3D printing devices that could be useful for the company. My findings had to be structured in a written report and were then used to change the 3D printing devices of the company.
+                      </div>
+                  </div>
+              </div>
+        </li>
+      </ul>
+      <hr>
 
-    <h2><i>Träumer</i></h2>
-    <p>date: 2023</p>
-    <p>technologies: Unity 3D (C#), SteamVR, Audacity</p>
-    <p>description: Träumer is a school project I've developped when I was studying at the <i>Université de Technologie de Compiègne</i>.</p>
+      <!-- TUTORING -->
+      <h1>TUTORING IN SCIENCES (Volunteer)</h1>
+      october 2021 to december 2023
+      
+      <br>
+      <div>
+        <br>
+        As long as I remember, I've always be passionate about pedagogy. During most of my studies, I've used my free time volunteering in high-school to help students in need in sciences and mathematics (also sometimes in French, English (and, rarely, Spanish!)).
+      </div>
+      <hr>
 
+    </section>
+    <br />
+    <br />
+    <br />
+    <br />
+    <p><i>victr-website</i> - 2024</p>
   </body>
 </html>
