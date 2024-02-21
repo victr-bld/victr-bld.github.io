@@ -178,17 +178,3 @@ body {
     flex: 1;
     margin: 10px;
 }
-
-/* Visual pleasance related */
-
-.text {
-    max-width: 800px;
-    margin: 0 auto;
-    overflow: hidden;
-    text-align: justify;
-}
-
-.video{
-    margin: 0 auto; /* Ajoute une marge automatique à gauche et à droite */
-    display: block; /* Assure que la vidéo est traitée comme un bloc */
-}
