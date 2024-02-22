@@ -2,9 +2,7 @@
 
 ## to-do:
 
-* add links to projects
-* start thinking about project page 
-* finish education page 
-* start thinking about experiences page (no need?)
+* finish education page structure
+* finish experience page structure
 * add a language change
 * clean the css file
