@@ -188,7 +188,7 @@ body {
     text-align: justify;
 }
 
-.video{
-    margin: 0 auto; /* Ajoute une marge automatique à gauche et à droite */
-    display: block; /* Assure que la vidéo est traitée comme un bloc */
+.illustration{
+    margin: 0 auto;
+    display: block;
 }
