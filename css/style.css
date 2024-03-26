@@ -135,7 +135,9 @@ body {
     /* background-color: var(--black); */
     grid-column: 1 / 3;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(calc(100% / 3), 1fr));
+    grid-auto-flow: row dense;
+    justify-content: center;
     border: 2px solid var(--black);
 }
   
@@ -146,6 +148,12 @@ body {
   
 .project {
     padding: 1.25em;
+    transition: all 0.3s ease; /* Ajouté ici */
+}
+
+.project:hover {
+    background-color: #f8f9fa; /* Couleur de fond lors du survol */
+    color: #353638; /* Couleur du texte lors du survol */
 }
   
 /* Education related */
