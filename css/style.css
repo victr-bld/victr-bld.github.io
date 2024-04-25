@@ -24,7 +24,8 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Canva Sans", Arial, Helvetica, sans-serif;
+    /*font-family: "Canva Sans", Arial, Helvetica, sans-serif;*/
+    font-family: Courier, monospace;
     color: var(--black);
     /* SELECTION UTILISATEUR
     -webkit-user-select: none;
@@ -54,8 +55,9 @@ body {
 }
   
 #header {
-    font-size: clamp(47px, 10vw, 200px);
-    font-family: "Canva Sans Bold", Arial, Helvetica, sans-serif;
+    font-size: clamp(47px, 10vw, 150px);
+    font-weight: bold;
+    /*font-family: "Canva Sans Bold", Arial, Helvetica, sans-serif;*/
     line-height: 0.8em;
     text-align: center;
     letter-spacing: -0.05em;
@@ -71,6 +73,13 @@ body {
     margin-bottom: 0.5em;
 }
   
+.main_container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    max-width: 1450px;
+}
+
 .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -109,26 +118,18 @@ body {
   
 #links > a {
     text-decoration: none;
-    font-family: "Canva Sans Bold", Arial, Helvetica, sans-serif;
+    /*font-family: "Canva Sans Bold", Arial, Helvetica, sans-serif;*/
     max-width: fit-content;
 }
   
 /* Project related */
 
-#projects {
-    grid-column: 1 / 5;
-
-    /* added 31/12: 
-    border: 2px solid var(--black);
-    */
-}
-  
 .technologies {
     font-style: italic;
 }
   
 .repo-link {
-    font-family: "Canva Sans Bold", Arial, Helvetica, sans-serif;
+    /*font-family: "Canva Sans Bold", Arial, Helvetica, sans-serif;*/
 } 
   
 #projects {
@@ -148,12 +149,32 @@ body {
   
 .project {
     padding: 1.25em;
-    transition: all 0.3s ease; /* Ajouté ici */
+    transition: all 0.3s ease;
 }
-
+/* 
 .project:hover {
-    background-color: #f8f9fa; /* Couleur de fond lors du survol */
-    color: #353638; /* Couleur du texte lors du survol */
+    background-color: #f8f9fa;
+    color: #353638; 
+} 
+*/
+
+#schools {
+    /* background-color: var(--black); */
+    grid-column: 1 / 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Updated to have only two items in the grid */
+    justify-content: center; /* Center the grid horizontally */
+    align-items: center; /* Center the grid vertically */
+    border: 2px solid var(--black);
+}
+  
+#schools * {
+    /* color: var(--white); */
+    text-decoration: none;
+}
+  
+.school {
+    padding: 1.25em;
 }
   
 /* Education related */
